@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Edu NSW ACT Cursive", cursive;
 }
 
 h1,
@@ -23,17 +23,21 @@ img {
     max-width: 100%;
 }
 
+header {
+    background-color: var(--primary-color);
+}
+
 #course-title {
     display: block;
     padding: 20px;
     font-size: 20px;
     color: hsl(0, 0%, 100%);
-    background-color: var(--primary-color);
     text-align: center;
 }
 
 nav {
     display: flex;
+    align-items: center;
     background-color: var(--secondary-color);
 }
 
@@ -51,11 +55,16 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
     gap: 8px;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 900px;
+}
+
+@media (min-width: 800px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 main h1 {
