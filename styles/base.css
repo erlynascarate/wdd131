@@ -1,0 +1,129 @@
+:root {
+    --primary-color: hsl(206.12deg 59.44% 28.04%);
+    --secondary-color: hsl(0deg 0% 20%);
+    color-scheme: light dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1,
+h3 {
+    color: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+#course-title {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    flex: auto;
+    padding: 12px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    color: hsl(206 80% 62% / 1);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 8px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 900px;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    padding: 24px;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card h2 {
+    padding: 12px;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.card p {
+    margin: 20px 16px;
+}
+
+.card>img {
+    float: right;
+    margin-top: 20px;
+    width: 120px;
+    clear: right;
+}
+
+.card h3 {
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+    text-align: center;
+}
+
+.card figure {
+    float: left;
+    margin: 20px 16px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.card:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.card ul {
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 8px;
+    padding: 28px 28px 28px 36px;
+}
+
+footer {
+    margin-top: 16px;
+    padding: 24px;
+    color: hsl(0, 0%, 100%);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+#lastModified {
+    color: hsl(60, 100%, 50%);
+    font-size: 14px;
+}
