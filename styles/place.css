@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #d21034;
+    color-scheme: light dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    padding: 20px;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+main {
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: #fff;
+    opacity: .8;
+}
+
+.card:last-child {
+    border-top: 1px solid #f2f2f2;
+    padding-top: 12px;
+}
+
+.card__title {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-bottom: 12px;
+}
+
+.card__img {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-bottom: 8px;
+    width: 70px;
+}
+
+.card strong {
+    text-align: right;
+}
+
+.footer {
+    padding: 18px;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.footer__p:first-child {
+    font-size: 1.3rem;
+}
+
+.footer__p:last-child {
+    font-size: .9rem;
+}
+
+.footer a {
+    color: #fff;
+}
+
+@media screen and (min-width: 700px) {
+    .cards {
+        position: absolute;
+        inset-block: 40px;
+        inset-inline: 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card:first-child {
+        align-self: flex-start;
+    }
+
+    .card:last-child {
+        align-self: flex-end;
+    }
+
+    .card__title {
+        padding: 12px 16px;
+        translate: -24px;
+        width: 104%;
+        color: #fff;
+        background-color: #007849;
+    }
+
+    #weather-title::after {
+        margin-left: 16px;
+        content: "⛅";
+    }
+
+    .card__img {
+        display: none;
+    }
+}

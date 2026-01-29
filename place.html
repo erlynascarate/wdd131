@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lima, Peru | Weather</title>
+    <meta name="description" content="This page shows the weather data of Lima, Peru">
+    <meta name="author" content="Erlyn Ascarate">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lima</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/lima-large.webp">
+            <source media="(min-width: 500px)" srcset="images/lima-medium.webp">
+            <img class="hero" src="images/lima-small.webp" alt="Lima">
+        </picture>
+        <section class="cards">
+            <div class="card">
+                <h2 class="card__title">Data</h2>
+                <strong>Country:</strong> Perú
+                <strong>Population:</strong> ~9,967,000
+                <strong>Languages:</strong> Spanish
+                <strong>Currency:</strong> Peruvian Sol (PEN)
+                <strong>Time Zone:</strong> PET (UTC-5)
+                <strong>Calling Code:</strong> +51
+                <strong>Internet TLD:</strong> .pe
+            </div>
+            <div class="card">
+                <h2 id="weather-title" class="card__title">Weather</h2>
+                <img class="card__img" src="images/weather.svg" alt="Weather Icon">
+                <strong>Temperature:</strong> <span id="temperature"></span>
+                <strong>Conditions:</strong> Partly Cloudy
+                <strong>Wind:</strong> <span id="wind"></span>
+                <strong>Wind Chill:</strong> <span id="windChill"></span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">&copy; <span id="currentyear"></span> | Erlyn Ascarate | Peru</p>
+        <p class="footer__p" id="lastModified"></p>
+        <p class="footer__p">Foto de <a href="https://unsplash.com/es/@creatorsproduce?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aarom Ore</a> en <a href="https://unsplash.com/es/fotos/ciudad-en-la-isla-durante-el-dia-Yrqyn1Gb80k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+    </footer>
+</body>
+</html>
