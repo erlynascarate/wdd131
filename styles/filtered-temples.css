@@ -89,18 +89,22 @@ nav {
     text-decoration: underline;
 }
 
+main {
+    padding: 48px 36px;
+}
+
+main h1 {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
 .main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 24px;
     margin: 0 auto;
-    padding: 48px 36px;
     max-width: 800px;
     text-align: center;
-}
-
-.main__title {
-    grid-column: 1 / -1;
 }
 
 .card {
