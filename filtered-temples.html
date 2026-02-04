@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description"
+        content="This page show a Temple Album to practice JavaScript and Responsive Design">
+    <meta name="author" content="Erlyn Ascarate">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <span class="header__title">Temple Album</span>
+        <button class="button" title="Menu">
+            <svg class="button__menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="currentColor">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+            <svg class="button__close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="currentColor">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </button>
+        <nav>
+            <ul class="nav">
+                <li><a id="home" class="nav__link" href="#">Home</a></li>
+                <li><a id="old" class="nav__link" href="#">Old</a></li>
+                <li><a id="new" class="nav__link" href="#">New</a></li>
+                <li><a id="large" class="nav__link" href="#">Large</a></li>
+                <li><a id="small" class="nav__link" href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        
+    </main>
+    <footer class="footer">
+        <p class="footer__p">&copy; <span id="currentyear"></span> | Erlyn Ascarate | Peru</p>
+        <p class="footer__p" id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
