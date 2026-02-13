@@ -116,3 +116,9 @@ footer {
     margin-top: 4px;
     font-size: .9rem;
 }
+
+@media screen and (min-width: 800px) {
+    form {
+        margin-block: 32px;
+    }
+}
