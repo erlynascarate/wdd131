@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description"
+        content="This page contains a form that submits a product review and saves how many times it was submited using local storage">
+    <meta name="author" content="Erlyn Ascarate">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label class="subtitle" for="product-name">Product Name *</label>
+            <select name="product-name" id="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <div class="subtitle">Overall *</div>
+            <div class="radios">
+                <input type="radio" name="rating" id="start-5" required>
+                <label for="start-5"><span class="sr-only">5 stars</span></label>
+                <input type="radio" name="rating" id="start-4">
+                <label for="start-4"><span class="sr-only">4 stars</span></label>
+                <input type="radio" name="rating" id="start-3">
+                <label for="start-3"><span class="sr-only">3 stars</span></label>
+                <input type="radio" name="rating" id="start-2">
+                <label for="start-2"><span class="sr-only">2 stars</span></label>
+                <input type="radio" name="rating" id="start-1">
+                <label for="start-1"><span class="sr-only">1 star</span></label>
+            </div>
+
+            <label class="subtitle" for="date">Date of Installation *</label>
+            <input type="date" name="date" id="date" required>
+
+            <div class="subtitle">
+                <p>Which features did you find useful in the product?</p>
+                <p>(Check all that apply)</p>
+            </div>
+            <div class="checkboxes">
+                <label for="durability">
+                    <input type="checkbox" name="features" id="durability" value="yes">
+                    Durability
+                </label>
+                <label for="ease-of-use">
+                    <input type="checkbox" name="features" id="ease-of-use" value="yes">
+                    Ease of Use
+                </label>
+                <label for="performance">
+                    <input type="checkbox" name="features" id="performance" value="yes">
+                    Performance
+                </label>
+                <label for="design">
+                    <input type="checkbox" name="features" id="design" value="yes">
+                    Design
+                </label>
+            </div>
+
+            <label class="subtitle" for="review">
+                Written Review
+                <span>(Optional)</span>
+            </label>
+            <textarea name="review" id="review" rows="7"></textarea>
+
+            <label class="subtitle" for="name">
+                Your Name
+                <span>(Optional)</span>
+            </label>
+            <input type="text" name="name" id="name">
+
+            <input class="submit" type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Erlyn Ascarate | Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

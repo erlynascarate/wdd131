@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #2d032b;
+    --secundary-color: #faf9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    padding: 16px;
+    color: var(--secundary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 16px auto;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 500px;
+    background-color: #d5cdd5;
+}
+
+.subtitle {
+    margin-bottom: -12px;
+    font-weight: 700;
+}
+
+.subtitle span {
+    font-size: .9rem;
+    color: #00087c;
+}
+
+.radios {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: end;
+    gap: 16px;
+}
+
+.radios label {
+    font-size: 2.5rem;
+    color: #e69e19;
+}
+
+.radios label::before {
+    content: '\2606';
+}
+
+.radios input {
+    width: 1px;
+    height: 1px;
+}
+
+.radios input:checked ~ label:before {
+  content:'\2605';
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+.checkboxes input {
+    width: 24px;
+    height: 24px;
+}
+
+input,
+select,
+textarea {
+    border: none;
+    padding: 12.5px;
+}
+
+.submit {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+footer {
+    margin-top: 16px;
+    padding: 24px;
+    color: var(--secundary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+#lastModified {
+    margin-top: 4px;
+    font-size: .9rem;
+}
