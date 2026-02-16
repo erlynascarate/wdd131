@@ -67,7 +67,7 @@ form {
   content:'\2605';
 }
 
-.sr-only {
+.start-label {
     position: absolute;
     width: 1px;
     height: 1px;
