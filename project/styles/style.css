@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #8399b9;
+    --primary-color: #99b3d8;
     --bg-color: #0f2546;
 }
 
@@ -154,6 +154,7 @@ label[for="search"] {
 
 figure {
     text-align: center;
+    background-color: var(--bg-color);
 }
 
 figure img {
