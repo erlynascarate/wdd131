@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #8399b9;
+    --bg-color: #0f2546;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    color: #abcdfeff;
+}
+
+input,
+select {
+    border-radius: 15px;
+    border: 1px solid var(--primary-color);
+    padding: 12px;
+    font-size: 1rem;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 16px;
+    font-size: 1.8rem;
+}
+
+nav {
+    display: flex;
+    background-color: var(--primary-color);
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-right: 1px solid var(--bg-color);
+    padding: 8px;
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+nav a:last-child {
+    border: none;
+}
+
+main {
+    margin: 0 auto;
+    padding: 28px;
+    max-width: 1200px;
+}
+
+/* Home */
+.heroe {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 auto;
+    border-radius: 32px;
+    max-width: 700px;
+    overflow: hidden;
+}
+
+.heroe-info {
+    padding: 12px;
+    background-color: #0b1b32  ;
+}
+
+.heroe-info__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.heroe-info h2 {
+    text-align: center;
+}
+
+.heroe-info h3 {
+    margin: 4px 0;
+}
+
+.heroe-info p {
+    margin-bottom: 8px;
+}
+
+.roles {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.roles h2 {
+    margin-bottom: -16px;
+}
+
+.carousel {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 12px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+}
+
+.carousel-heroe {
+    min-width: 200px;
+    scroll-snap-align: start;
+}
+
+
+/* Heroes */
+form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+label[for="search"],
+input[type="search"] {
+    grid-column: 1 / -1;
+}
+
+label[for="search"] {
+    margin-bottom: -6px;
+}
+
+#heroes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    border-radius: 20%;
+}
+
+figcaption {
+    margin-top: 4px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    padding: 16px;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--primary-color);
+        padding: 20px 32px;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    nav a {
+        padding: 16px;
+    }
+
+    /* Home */
+}
